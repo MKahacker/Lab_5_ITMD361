@@ -29,7 +29,7 @@
     function alertFunction(){
       var userInput = document.getElementById('entryinput');
       var heading2 = document.getElementsByTagName('h2');
-      var h2content = heading2.innerHTML;
+      var h2content = heading2[0].innerHTML;
       var message = userInput.value;
       alert(h2content + ":" + " " + message);
     }
