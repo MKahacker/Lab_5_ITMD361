@@ -26,8 +26,6 @@
     }
   </style>
   <script async>
-    var entrybutton = document.getElementById('entrybutton');
-    entrybutton.addEventListener("click", alertFunction, false);
     function alertFunction(){
       var userInput = document.getElementById('entryinput');
       var heading2 = document.getElementsByTagName('h2');
@@ -36,6 +34,9 @@
       alert(h2content + ":" + " " + message);
       document.getElementById('textoutput').innerHTML = message;
     }
+    var entrybutton = document.getElementById('entrybutton');
+    entrybutton.addEventListener("click", alertFunction, false);
+
   </script>
 </head>
 <body>
