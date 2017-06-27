@@ -26,6 +26,8 @@
     }
   </style>
   <script async>
+    var entrybutton = document.getElementById('entrybutton');
+    entrybutton.addEventListener("click", alertFunction, false);
     function alertFunction(){
       var userInput = document.getElementById('entryinput');
       var heading2 = document.getElementsByTagName('h2');
@@ -42,7 +44,7 @@
   <h3 class="center">mkahack@iit.edu</h3>
   <div id="container">
     <input id="entryinput" type="text" name="textentry" placeholder="Enter a Message">
-    <div id="entrybutton" onclick=alertFunction()>Alert Me</div>
+    <div id="entrybutton">Alert Me</div>
     <h2 id="textoutput" class="center">Show results here</h2>
   </div>
 </body>
