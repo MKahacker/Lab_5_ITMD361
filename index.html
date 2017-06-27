@@ -25,18 +25,6 @@
       font-weight: bold;
     }
   </style>
-  <script>
-    function alertFunction(){
-      var userInput = document.getElementById('entryinput');
-      var heading2 = document.getElementsByTagName('h2');
-      var h2content = heading2[0].innerHTML;
-      var message = userInput.value;
-      alert(h2content + ":" + " " + message);
-      document.getElementById('textoutput').innerHTML = message;
-    }
-    document.getElementById('entrybutton').addEventListener("click", alertFunction, false);
-
-  </script>
 </head>
 <body>
   <h1 class="center">ITMD-361 - Lab 7 - Basic JavaScript Event Handling and DOM</h1>
@@ -47,5 +35,16 @@
     <div id="entrybutton">Alert Me</div>
     <h2 id="textoutput" class="center">Show results here</h2>
   </div>
+  <script>
+    function alertFunction(){
+      var userInput = document.getElementById('entryinput');
+      var heading2 = document.getElementsByTagName('h2');
+      var h2content = heading2[0].innerHTML;
+      var message = userInput.value;
+      alert(h2content + ":" + " " + message);
+      document.getElementById('textoutput').innerHTML = message;
+    }
+    document.getElementById('entrybutton').addEventListener("click", alertFunction, false);
+  </script>
 </body>
 </html>
