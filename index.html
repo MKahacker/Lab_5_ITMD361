@@ -29,8 +29,9 @@
     function alertFunction(){
       var userInput = document.getElementById('entryinput');
       var heading2 = document.getElementByTagName('h2');
+      var h2content = heading2.innerHTML;
       var message = userInput.value;
-      alert(heading2 + message);
+      alert(h2content + ":" + " " + message);
     }
   </script>
 </head>
